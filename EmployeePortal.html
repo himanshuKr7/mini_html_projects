@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EmployeePortal</title>
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+		<style>
+			body{
+				padding: 0%;
+				margin: 0%;
+				background-color:#8cece1;
+			}
+			header,footer{
+				padding: 2px;
+				margin: 0%;
+				text-align: center;
+				color:white;
+				background-color: rgb(56, 99, 114);
+			}
+			.navitem{
+				display: inline;
+				padding: 15px;;
+			}
+			.navitem a{
+				text-decoration: none;
+				color: whitesmoke;
+			}
+			.registration{
+				width: max-content;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/* .employeetable{
+				text-align: center;
+			} */
+			table{
+				margin-left: auto;
+				margin-left: auto;
+				width: 100%;
+				border-collapse: collapse;
+			}
+			th,td{
+				border: 1px solid cyan;
+			}
+			.contact{
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Welcome To HR Employee Portal</h1>
+			<ul>
+				<li class="navitem"><a href="#RegistrationForm">Employee Registration From</a></li>
+				<li class="navitem"><a href="#EmployeeDirectory">Employee Directory Table </a></li>
+				<li class="navitem"><a href="#contact_us">Contact Us</a></li>
+			</ul>
+		</header>
+		<img src="image2.jpg" alt="portal image" width="100%" height="300vh" />
+		<section id="RegistrationForm" class="registration">
+			<h2>Employee Registration Form</h2>
+			<p>Fill the below form to register as Employee</p>
+			<form>
+				<fieldset>
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" placeholder="enter first name" /><br />
+					<br>
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" placeholder="enter last name" /><br />
+					<br>
+					<label for="Email">Email:</label>
+					<input type="email" id="Email" placeholder="enter your email" /><br />
+					<br>
+					<label for="phoneno.">PhoneNo.</label>
+					<input
+						type="number"
+						id="phoneno."
+						placeholder="enter your phone no." /><br />
+						<br>
+					<label for="">Gender:</label>
+					<input type="radio" id="male" name="sex" /><label for="male"
+						>Male</label
+					>
+					<input type="radio" id="female" name="sex" /><label for="female"
+						>Female</label
+					><br />
+					<br>
+					<label for="position">Role:</label>
+					<select name="Role" id="position">
+						<option value="">Select the Option</option>
+						<option value="SoftwareEngineer">Software Engineer</option>
+						<option value="DataAnalyst">DataAnalyst</option>
+						<option value="Developer">Developer</option>
+						<option value="Tester">Tester</option>
+						<option value="Designer">Designer</option>
+						<option value="ProjectManager">ProjrctManager</option>
+					</select><br>
+					<br>
+					<input type="submit">
+					<input type="reset">
+				</fieldset>
+			</form>
+		</section>
+		<section id="EmployeeDirectory" >
+			<h2 style="text-align: center;">Employee Directory Table</h2>
+			<table>
+				<tr>
+					<td><b>Employee Id</b></td>
+					<td><b>Employee Name</b>
+					</td>
+					<td><b>Role</b></td>
+				</tr>
+				<tr>
+					<td>21bcsd95</td>
+					<td>Abhinav Singh</td>
+					<td>Senior Developer</td>
+				</tr>
+				<tr>
+					<td>21bcsg14</td>
+					<td>Himanshu Kumar</td>
+					<td>junior Developer</td>
+				</tr>
+				<tr>
+					<td>21bcse85</td>
+					<td>Aditya Dutta</td>
+					<td>Project Manager</td>
+				</tr>
+				<tr>
+					<td>21bcef84</td>
+					<td>Ranjan Kumar</td>
+					<td>Tester</td>
+				</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="contact_us" class="contact">
+			<h2>Contact Us</h2>
+			<p>You Can Contact & Visit Us</p>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.7806764633715!2d85.8037610752383!3d20.350677281134352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e064769e73%3A0x9288172f3a98c7a4!2sSilicon%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1700367878586!5m2!1sen!2sin"
+				width="500"
+				heigh="400"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<footer>
+			<p>&copy;2023 Reserved by Himanshu Kumar</p>
+		</footer>
+	</body>
+</html>
